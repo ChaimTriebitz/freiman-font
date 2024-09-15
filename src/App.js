@@ -2,8 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import { NavBar, Dialogs } from './cmps';
 import { Home, About, Services, Resources, Contact } from './pages';
 function App() {
-   
-   document.title = 'ccf'
+
+   document.title = 'frieman - law form'
 
    return (
       <div className="App">
