@@ -1,0 +1,16 @@
+.dialog {
+   max-width: 1200px;
+   width: max-content;
+   border: 2px solid $color-2;
+   border-radius: 10px;
+
+   .dialog-content {
+      padding: 1em;
+   }
+
+   &.post {
+      section {
+         flex-direction: column;
+      }
+   }
+}

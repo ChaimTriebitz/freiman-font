@@ -1,0 +1,124 @@
+.form {
+   padding: 1em;
+   flex-direction: column;
+   max-width: 400px;
+
+   .input {
+      position: relative;
+      flex-direction: column;
+
+      label {
+         font-weight: 500;
+         color: $color-1;
+
+         &[for="image"] {
+            min-height: 100px;
+
+            img {}
+         }
+
+         &.single {
+            img {
+               position: absolute;
+               inset: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: contain;
+            }
+         }
+
+         &:hover::after {
+            opacity: 1 !important;
+
+         }
+
+         &:has(+ input[hidden])::after {
+            opacity: 0.25;
+            position: absolute;
+            inset: 0;
+            transition: 0.5s;
+            content: url('../../assets/imgs/upload-100.png');
+            font-size: 3em;
+            width: 100%;
+            height: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+         }
+
+         &:has(+ input:placeholder-shown) {
+            visibility: hidden;
+         }
+
+         &:has(+ select.no-value) {
+            visibility: hidden;
+         }
+
+
+      }
+
+      input,
+      select {
+         height: 2em;
+         width: 100%;
+         background-color: $color-1;
+         border-radius: 3px;
+         padding: 0 0.5em;
+         font-weight: 500;
+
+         &::placeholder {
+            color: $color-4;
+         }
+
+
+      }
+
+      .images {
+         position: absolute;
+         inset: 0;
+         justify-content: center;
+         align-items: center;
+         z-index: 0;
+
+         img {
+            // height: 50px;
+         }
+      }
+   }
+
+
+
+   button {
+      width: 100%;
+      background: $color-5;
+      color: $color-1;
+      padding: 0.75em 0;
+      font-weight: 500;
+      border-radius: 5px;
+      justify-content: center;
+   }
+
+   .error {
+      height: 1em;
+      margin-top: 0.5em;
+      color: $color-4;
+   }
+
+   nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+      margin-top: 1em;
+
+      a {
+         flex: 1;
+         text-align: center;
+         background: $color-2;
+         color: $color-1;
+         padding: 0.25em 0;
+      }
+   }
+}
