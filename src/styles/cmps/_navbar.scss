@@ -1,5 +1,5 @@
 .nav-bar {
-   background: $color-1;
+   background: $color-2;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -9,7 +9,6 @@
 
    .user-section {
       button {
-
          min-width: 25px;
          min-height: 25px;
       }
@@ -66,8 +65,8 @@
       }
 
       a {
-         text-decoration: none;
-         color: white;
+         color: $color-1;
+
          font-size: 1em;
          text-transform: uppercase;
          opacity: 0;
@@ -76,7 +75,8 @@
 
          &:hover,
          &.active {
-            color: $color-5;
+         color: white;
+
          }
       }
    }
