@@ -2,6 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 import { NavBar, Dialogs } from './cmps';
 import { Home, About, Services, Resources, Contact } from './pages';
 function App() {
+   
+   document.title = 'ccf'
+
    return (
       <div className="App">
          <Dialogs />
