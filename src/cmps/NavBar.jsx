@@ -32,7 +32,7 @@ export const NavBar = () => {
          </section>
 
 
-         <section className={isMenuOpen ? 'nav open' : 'nav'}>
+         <section onClick={() => setIsMenuOpen(prev => !prev)} className={isMenuOpen ? 'nav open' : 'nav'}>
             {
                pages.map(page =>
                   <NavLink key={page.link} to={pathname === page.link ? page.link + search : page.link}>{page.name}</NavLink>
