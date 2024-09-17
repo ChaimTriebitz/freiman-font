@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { svgs } from '../assets/svgs';
-import logo from './../assets/imgs/frieman-logo.webp'
+import logo from './../assets/imgs/fraiman-logo.png'
 import React, { useRef, useState } from 'react';
 import { useBlur, useGlobalState } from '../hooks';
 

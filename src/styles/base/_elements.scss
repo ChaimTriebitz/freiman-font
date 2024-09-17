@@ -20,8 +20,7 @@ html:focus-within {
 }
 
 body {
-   // background: $color-6;
-   color: $color-4;
+   color: $c4;
    text-rendering: optimizeSpeed;
    line-height: 1.5;
    font-family: 'Poppins', sans-serif;
@@ -38,6 +37,7 @@ form,
 button {
    display: flex;
    gap: 0.5em;
+   flex: 1;
 }
 
 ul[role="list"],
@@ -103,10 +103,10 @@ dialog::backdrop {
 }
 
 ::-webkit-scrollbar-track {
-   background: $color-4;
+   background: $c4;
 }
 
 ::-webkit-scrollbar-thumb {
-   background: $color-2;
+   background: $c2;
    border-radius: 5px;
 }

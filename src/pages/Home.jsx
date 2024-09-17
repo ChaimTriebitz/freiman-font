@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useGlobalState } from '../hooks';
-import {  Search } from '../cmps'
+import { Search } from '../cmps'
 
 export const Home = () => {
    const { loggedInUser } = useGlobalState()
@@ -17,7 +17,11 @@ export const Home = () => {
 
    return (
       <div className='page home'>
-         home
+         <div className="banner home">
+            <h1>Expert Real Estate Legal Guidance by</h1> 
+            <h2>Netanel Fraiman</h2> 
+            <h3>Your Trusted Partner in Property Transactions and Tax Solutions</h3>
+         </div>
          {/* <Search /> */}
          {/* <button onClick={ai}>ai</button> */}
          {/* <CreatePost /> */}

@@ -1,5 +1,5 @@
 .create-post {
-   background: $color-2;
+   background: $c2;
    margin: auto;
 
    label[for="image"] {
@@ -37,7 +37,6 @@
 
 .post {
    display: block;
-   background: $color-6;
    // box-shadow: 0 7px 12px rgba(0, 0, 0, 0.55), 0 7px 9px rgba(0, 0, 0, 0.55);
    border-radius: 1em;
    max-width: 250px;
@@ -61,13 +60,13 @@
          h1 {
             font-size: 1em;
             font-weight: 700;
-            color: $color-3;
+            color: $c3;
          }
 
          h2 {
             font-size: 1.5em;
             font-weight: 500;
-            color: $color-4;
+            color: $c4;
 
          }
 

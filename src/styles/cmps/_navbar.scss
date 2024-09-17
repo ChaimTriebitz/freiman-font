@@ -1,11 +1,12 @@
 .nav-bar {
-   background: $color-2;
+   background: $c2;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 1em;
    position: relative;
    z-index: 10;
+   flex: 0;
 
    .user-section {
       button {
@@ -33,7 +34,7 @@
    .logo-section {
 
       img {
-         width: 50px;
+         width: 118px;
          // border-radius: 50%;
       }
    }
@@ -55,7 +56,7 @@
       gap: 1em;
 
       &.open {
-         background: $color-2;
+         background: $c2;
          transform: scale(1, 1);
 
          a {
@@ -65,8 +66,7 @@
       }
 
       a {
-         color: $color-1;
-
+         color: $c1;
          font-size: 1em;
          text-transform: uppercase;
          opacity: 0;
@@ -75,7 +75,7 @@
 
          &:hover,
          &.active {
-         color: white;
+            color: $c3;
 
          }
       }
