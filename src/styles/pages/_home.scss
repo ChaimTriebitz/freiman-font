@@ -1,57 +1,44 @@
 .home {
    .banner {
-      display: flex;
-      flex-direction: column;
-      max-height: 80vh;
+      background-image:
+         linear-gradient(#ffffff26 75%, #3a3a3a80, #3a3a3a 99%),
+         url('../../assets/imgs/home-banner.jpg'), ;
+   }
 
-      &.home {
-         position: relative;
-         background-image:
-            linear-gradient(#ffffff10 75%, #3a3a3a80, #3a3a3a 99%),
-            url('../../assets/imgs/home-banner.jpg'),
-         ;
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center;
+   h1 {
+      color: $c2;
+      font-size: 4.5em;
+      font-family: 'Gibson-bold';
+      text-align: center;
+      margin: 0.25em 1em 0 1em;
+      text-shadow: 0 0 10px white;
+   }
+
+   h2 {
+      color: $c1;
+      font-size: 5em;
+      font-family: 'Patua';
+      font-weight: 600;
+      text-align: center;
+      -webkit-text-stroke: 1px $c2;
+      text-stroke: 0.1px $c2;
+      text-shadow: 10 10 50px white;
+   }
+
+   h3 {
+      color: $c2;
+      font-size: 3em;
+      line-height: 1;
+      font-family: 'Gibson-bold';
+      text-align: center;
+      text-shadow: 0 0 10px white;
+
+      &:first-of-type {
+         margin-top: 0.5em;
       }
+   }
 
-      h1 {
-         color: $c2;
-         font-size: 4.5em;
-         font-family: 'Gibson-bold';
-         text-align: center;
-         margin: 0.25em 1em 0 1em;
-         text-shadow: 0 0 10px white;
-      }
-
-      h2 {
-         color: $c1;
-         font-size: 5em;
-         font-family: 'Patua';
-         font-weight: 600;
-         text-align: center;
-         -webkit-text-stroke: 0.1px $c2;
-         text-stroke: 0.1px $c2;
-         text-shadow: 0 0 10px white;
-      }
-
-      h3 {
-         color: $c2;
-         font-size: 3em;
-         line-height: 1;
-         font-family: 'Gibson-bold';
-         text-align: center;
-         text-shadow: 0 0 10px white;
-
-         &:first-of-type {
-            margin-top: 0.5em;
-         }
-      }
-
-      a.btn {
-         margin-top: 4em;
-      }
-
-
+   a.btn {
+      margin-top: 4em;
    }
 }
