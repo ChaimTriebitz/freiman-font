@@ -3,7 +3,7 @@ import { NavBar, Dialogs } from './cmps';
 import { Home, About, Services, Resources, Contact } from './pages';
 function App() {
 
-   document.title = 'frieman - law form'
+   document.title = 'Fraiman - law form'
 
    return (
       <div className="App">
