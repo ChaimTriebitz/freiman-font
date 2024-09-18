@@ -1,18 +1,18 @@
-@import 'config/vars';
-@import 'config/functions';
-@import 'config/mixins';
-@import 'config/placeholders';
-@import 'config/typography';
 
-@import 'base/animations';
-@import 'base/elements';
-@import 'base/layout';
-@import 'base/btns';
 
-@import 'cmps/navbar';
-@import 'cmps/form';
-@import 'cmps/carousel';
-@import 'cmps/posts';
-@import 'cmps/search';
-@import 'cmps/dialogs';
-@import 'cmps/user-profile';
+@import 'base/_vars';
+@import 'base/_animations';
+@import 'base/_elements';
+@import 'base/_layout';
+@import 'base/_btns';
+@import 'base/_typography';
+// CMPS
+@import 'cmps/_navbar';
+@import 'cmps/_form';
+@import 'cmps/_carousel';
+@import 'cmps/_posts';
+@import 'cmps/_search';
+@import 'cmps/_dialogs';
+@import 'cmps/_hamburger.scss';
+// PAGES
+@import 'pages/_home.scss'

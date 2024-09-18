@@ -40,11 +40,9 @@ export const NavBar = () => {
             }
          </section>
 
-         <section className='hamburger-section'>
-            <button onClick={() => setIsMenuOpen(prev => !prev)}>
+            <button className={isMenuOpen ? 'hamburger open' : 'hamburger'} onClick={() => setIsMenuOpen(prev => !prev)}>
                {svgs.hamburger}
             </button>
-         </section>
 
       </div >
    )

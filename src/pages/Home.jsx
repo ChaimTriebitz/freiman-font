@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useGlobalState } from '../hooks';
 import { Search } from '../cmps'
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
    const { loggedInUser } = useGlobalState()
@@ -20,8 +21,11 @@ export const Home = () => {
          <div className="banner home">
             <h1>Expert Real Estate Legal Guidance by</h1> 
             <h2>Netanel Fraiman</h2> 
-            <h3>Your Trusted Partner in Property Transactions and Tax Solutions</h3>
+            <h3>Your Trusted Partner in Property</h3>
+            <h3> Transactions and Tax Solutions</h3>
+            <Link className='btn' to='/contact'>Contact us</Link>
          </div>
+
          {/* <Search /> */}
          {/* <button onClick={ai}>ai</button> */}
          {/* <CreatePost /> */}

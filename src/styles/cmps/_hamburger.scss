@@ -1,0 +1,34 @@
+.hamburger {
+   position: relative;
+
+   .top_bar,
+   .bottom_bar {
+      stroke-dasharray: 240px 910px;
+   }
+
+   .middle_bar {
+      stroke-dasharray: 240px 240px;
+   }
+
+   svg path {
+      stroke-width: 30;
+      stroke-linecap: round;
+      stroke: white;
+      fill: none;
+      transition: all .5s ease-in-out;
+   }
+
+   &.open {
+
+      .top_bar,
+      .bottom_bar {
+         stroke-dashoffset: -650px;
+      }
+
+      .middle_bar {
+         stroke-dasharray: 0px 220px;
+         stroke-dashoffset: -120px;
+      }
+   }
+
+}
