@@ -22,7 +22,7 @@ export const NavBar = () => {
    const userProfileRef = useBlur(() => setIsUserProfileOpen(false))
 
    return (
-      <div className='nav-bar'>
+      <nav className='nav-bar'>
 
 
          <section className='logo-section' >
@@ -44,7 +44,7 @@ export const NavBar = () => {
                {svgs.hamburger}
             </button>
 
-      </div >
+      </nav >
    )
 }
 

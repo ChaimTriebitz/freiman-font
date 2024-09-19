@@ -1,0 +1,51 @@
+.rotating-text {
+   position: relative;
+   display: inline-block;
+   color: white;
+   font-size: 3.5vw;
+   line-height: 1;
+   font-family: 'Gibson';
+   font-weight: 700;
+   text-shadow: $shadow-dark;
+   span {
+      color: $c5;
+      -webkit-text-stroke: 1px $c6;
+      text-stroke: 1px $c6;
+      font-family: 'Gibson-bold';
+      white-space: nowrap;
+      display: inline-block;
+      position: absolute;
+      font-size: 4vw;
+      top: 45%;
+      text-shadow: $shadow-dark;
+      margin-left: 0.25em;
+      animation: slideUp var(--rotating-text-frequency) ease-in-out infinite;
+   }
+}
+
+@keyframes slideUp {
+   0% {
+      opacity: 0;
+      transform: translateY(-40%);
+   }
+
+   5% {
+      opacity: 1;
+      transform: translateY(-50%);
+   }
+
+   85% {
+      opacity: 1;
+      transform: translateY(-50%);
+   }
+
+   95% {
+      opacity: 0;
+      transform: translateY(-60%);
+   }
+
+   100% {
+      opacity: 0;
+      transform: translateY(-60%);
+   }
+}

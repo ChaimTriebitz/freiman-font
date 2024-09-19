@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-import { NavBar, Dialogs } from './cmps';
+import { NavBar, Dialogs, Footer } from './cmps';
 import { Home, About, Services, Resources, Contact } from './pages';
+
 function App() {
 
    document.title = 'Fraiman - law form'
@@ -16,6 +17,7 @@ function App() {
             <Route path='/resources' element={<Resources />} />
             <Route path='/contact' element={<Contact />} />
          </Routes>
+         <Footer />
       </div>
    );
 }

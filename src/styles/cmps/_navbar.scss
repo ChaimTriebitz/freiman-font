@@ -63,7 +63,7 @@
 
          &:hover,
          &.active {
-            color: $c3;
+            color: white;
 
          }
       }
@@ -80,7 +80,7 @@
 @media (min-width: 900px) {
 
    .nav-bar {
-      .hamburger-section {
+      .hamburger {
          display: none;
       }
 

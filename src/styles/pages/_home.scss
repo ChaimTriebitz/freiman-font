@@ -1,44 +1,61 @@
 .home {
+
+
+   // >* {
+   //    flex: 0;
+
+   // }
+
    .banner {
+      gap: 2em;
       background-image:
-         linear-gradient(#ffffff26 75%, #3a3a3a80, #3a3a3a 99%),
+         linear-gradient(#ffffff29 75%, #3a3a3a80, #3a3a3a 95%),
          url('../../assets/imgs/home-banner.jpg'), ;
-   }
 
-   h1 {
-      color: $c2;
-      font-size: 4.5em;
-      font-family: 'Gibson-bold';
-      text-align: center;
-      margin: 0.25em 1em 0 1em;
-      text-shadow: 0 0 10px white;
-   }
+      >* {
+         flex: 0;
+      }
 
-   h2 {
-      color: $c1;
-      font-size: 5em;
-      font-family: 'Patua';
-      font-weight: 600;
-      text-align: center;
-      -webkit-text-stroke: 1px $c2;
-      text-stroke: 0.1px $c2;
-      text-shadow: 10 10 50px white;
-   }
+      .card2 {
+         position: absolute;
+         top: 50%;
+         left: 10%;
+         transform: translateY(-50%);
+      }
 
-   h3 {
-      color: $c2;
-      font-size: 3em;
-      line-height: 1;
-      font-family: 'Gibson-bold';
-      text-align: center;
-      text-shadow: 0 0 10px white;
+      h1 {
+         color: white;
+         font-size: 4.5em;
+         font-family: 'Gibson-bold';
+         text-align: center;
+         margin: 0.25em 1em 0 1em;
+         -webkit-text-stroke: 2px $c2;
+         text-stroke: 2px $c2;
+         text-shadow: $shadow-dark;
+      }
 
-      &:first-of-type {
-         margin-top: 0.5em;
+      h2 {
+         color: $c1;
+         font-size: 5em;
+         font-family: 'Patua';
+         font-weight: 600;
+         text-align: center;
+         -webkit-text-stroke: 2px $c2;
+         text-stroke: 1px $c2;
+         text-shadow: $shadow-light;
+      }
+
+      .rotating-text-container {
+         width: 70%;
+         margin: 1em auto;
       }
    }
 
+
+
+
+
    a.btn {
-      margin-top: 4em;
+      margin: 2em;
    }
 }
