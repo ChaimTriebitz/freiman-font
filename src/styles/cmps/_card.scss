@@ -46,15 +46,19 @@
 }
 
 .card2 {
-   padding: 2px;
-   width: 200px;
-   height: 200px;
+   padding: 5px;
+   width: 15%;
+   height: 30%;
    border-radius: 20px;
    position: relative;
    overflow: hidden;
    border-radius: 100% 200px 80% 300px;
    box-shadow: $shadow-light;
    z-index: 9;
+   @media (max-width:900px) {
+      width: 150px;
+      height: 150px;
+   }
 }
 
 .card2>img {
@@ -70,16 +74,14 @@
    content: '';
    height: 200%;
    width: 200%;
-   background: linear-gradient($c1, $c2, $c3, $c4, $c5, $c6, $c7, );
+   background: linear-gradient($c1, $c2, $c3, $c4, $c5, $c6, white);
    position: absolute;
    inset: 50%;
    transform: translate(-50%, -50%);
    z-index: 1;
+   animation: borderRotate 10s linear infinite;
 }
 
-.card2:hover::before {
-   animation: borderRotate 1s linear infinite;
-}
 
 @keyframes borderRotate {
    to {
