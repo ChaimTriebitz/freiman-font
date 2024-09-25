@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Services = () => {
    return (
-      <div>Services</div>
+      <div className='services'>
+         <div className="banner"></div>
+      </div>
    )
 }

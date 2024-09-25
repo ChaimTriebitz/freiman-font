@@ -24,7 +24,7 @@ export const Home = () => {
             <h1>Experienced Real Estate Lawyer in</h1>
             <span className='isreal'>Israel</span>
             <div className='card2'>
-               <img src={imgs.office} alt="img" />
+               <img src={imgs?.office} alt="img" />
             </div>
             <h2>Netanel Fraiman</h2>
             <div className='rotating-text-container' style={{ display: "block" }}>
@@ -35,7 +35,7 @@ export const Home = () => {
             </div>
             <Link className='btn' to='/contact'>Contact us</Link>
          </div>
-         <Card img={imgs.office} />
+         {/* <Card img={imgs?.office} /> */}
          {/* <Search /> */}
          {/* <button onClick={ai}>ai</button> */}
          {/* <CreatePost /> */}
