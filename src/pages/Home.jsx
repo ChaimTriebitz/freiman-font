@@ -20,7 +20,7 @@ export const Home = () => {
             <Link className='btn' to='/contact'>Contact us</Link>
          </div>
          <div className="info">
-            <img src={imgs.home} alt="" />
+            <img src={imgs.jerusalem.j1} alt="" />
             <p>
                Netanel Fraimann is a real-estate lawyer, advising clients on purchase, sale, and rental transactions, as well as tax-related real estate issues.
             </p>
