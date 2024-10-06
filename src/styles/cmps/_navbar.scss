@@ -1,5 +1,5 @@
 .nav-bar {
-   background: $c2;
+   background: $c5;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -10,6 +10,7 @@
 
    .hamburger {
       height: 100%;
+
       svg {
          height: 80px;
          position: absolute;
@@ -44,7 +45,7 @@
       gap: 1em;
 
       &.open {
-         background: $c2;
+         background: $c5;
          transform: scale(1, 1);
 
          a {
@@ -54,7 +55,7 @@
       }
 
       a {
-         color: $c1;
+         color: $c6;
          font-size: 1em;
          text-transform: uppercase;
          opacity: 0;
@@ -64,7 +65,7 @@
          &:hover,
          &.active {
             color: white;
-
+            font-weight: 500;
          }
       }
    }

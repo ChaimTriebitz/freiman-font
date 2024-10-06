@@ -1,7 +1,33 @@
 .footer {
-   background: $c2;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: $c5;
+   gap: 0.5em !important;
+   color: white;
+   font-size: 2.85vw;
+   padding: 1em;
+   font-family: Patua;
 
-   img {
-      height: 50px;
+   .item {
+      display: flex;
+      gap: 0.5em;
+      align-items: center;
+      font-size: 2vw;
+      svg{
+         animation: tilt-shake 2s infinite;
+      }
+
    }
+
+   @media (min-width: 1000px) {
+      font-size: 1.5vw;
+   }
+
+   b {}
+
+   p:hover {
+      transform: scale(1.01);
+   }
+
 }

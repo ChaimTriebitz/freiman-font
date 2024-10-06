@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { NavBar, Dialogs, Footer } from './cmps';
+import { NavBar,  Footer } from './cmps';
 import { Home, About, Services, Resources, Contact } from './pages';
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
 
    return (
       <div className="App">
-         <Dialogs />
          <NavBar />
          <Routes>
             <Route path='/' element={<Home />} />

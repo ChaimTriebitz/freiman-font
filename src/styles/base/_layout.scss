@@ -21,3 +21,16 @@
    min-height: 80vh;
 }
 
+.icon {
+   width: 25px;
+   height: 25px;
+   min-width: 25px;
+   min-height: 25px;
+   @media (max-width:900px) {
+      width: 17.5px;
+      height: 17.5px;
+      min-width: 17.5px;
+      min-height: 17.5px;
+   }
+}
+
