@@ -11,8 +11,10 @@ export const RotatingText = ({ staticText = '', rotatingTexts = [], frequency = 
       return () => clearInterval(intervalId); // Cleanup interval on unmount
    }, []);
 
+
    return (
       <p className="rotating-text" style={{
+         '---text-frequency': `${Math.max(...rotatingTexts.map(t => t.length)) * 10}px`,
          '--rotating-text-frequency': `${frequency}s`, // Pass the CSS variable to SCSS via inline style
       }}>
          {staticText}

@@ -4,21 +4,17 @@
    justify-content: space-between;
    align-items: center;
    padding: 1em;
-   position: relative;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
    z-index: 10;
    flex: 0;
 
-   .hamburger {
-      height: 100%;
-
-      svg {
-         height: 80px;
-         position: absolute;
-         top: 50%;
-         right: -1em;
-         transform: translateY(-50%);
-      }
+   @media (max-width: 900px) {
+      padding: 0.5em;
    }
+
 
 
    .logo-section {

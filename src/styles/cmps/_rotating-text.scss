@@ -1,41 +1,17 @@
 .rotating-text {
    position: relative;
    display: inline-block;
-   font-size: 3.5vw;
-   // line-height: 1;
-   font-family: 'Gibson-bold';
-
-   color: $c6;
-   -webkit-text-stroke: 2px $c2;
-   text-stroke: 1px $c2;
-   text-shadow: $shadow-light;
-
-   @media (max-width: 900px) {
-      font-size: 7vw;
-   }
+   font-size: 3em;
+   justify-content: center;
 
    span {
-      color: $c5;
-      -webkit-text-stroke: 0.5px white;
-      text-stroke: 0.5px white;
-      font-family: 'Gibson-bold';
-      white-space: nowrap;
       display: inline-block;
+      white-space: nowrap;
       position: absolute;
-      font-size: 4vw;
       top: 50%;
-      text-shadow: $shadow-dark;
-      margin-left: 0.25em;
+      margin-left: 1%;
+      margin-top: 0.33%;
       animation: slideUp var(--rotating-text-frequency) ease-in-out infinite;
-
-      @media (max-width: 900px) {
-         font-size: 7.5vw;
-         top: 75%;
-         -webkit-text-stroke: 0.5px white;
-         text-stroke: 0.5px white;
-         text-shadow: none;
-
-      }
    }
 }
 

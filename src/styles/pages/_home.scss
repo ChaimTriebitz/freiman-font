@@ -1,40 +1,48 @@
 .home {
    .banner {
+      padding-bottom: 5em;
+      padding-inline: 1em;
+
+      justify-content: space-around;
       gap: 1em;
       background-image:
-         linear-gradient(#2a8dd030 75%, #2a8dd080, #2a8dd0 95%),
+         linear-gradient(#ffffff25 85%, #ffffff50, #ffffff 90%),
          url('../../assets/imgs/jerusalem/jeru-bridge.webp'), ;
+
+         @media (min-width:700px) {
+            gap: 0;
+   
+         }
 
       >* {
          flex: 0;
       }
 
-      .card2 {
-         position: absolute;
-         top: 50%;
-         left: 7.5%;
-         transform: translateY(-50%);
+      // .card2 {
+      //    position: absolute;
+      //    top: 50%;
+      //    left: 7.5%;
+      //    transform: translateY(-50%);
 
-         @media (max-width:900px) {
-            left: 50%;
-            transform: translate(-50%, -90%);
-         }
-      }
+      //    @media (max-width:700px) {
+      //       left: 50%;
+      //       transform: translate(-50%, -90%);
+      //    }
+      // }
 
       h1 {
-         color: white;
+         color: $c5;
          font-size: 5vw;
          font-family: 'Gibson-bold';
          text-align: center;
-         text-stroke: 2px $c5;
-         -webkit-text-stroke: 2px $c5;
-         text-shadow: $shadow-dark;
-         margin: 1em 1em 0 1em;
+         text-shadow: $shadow-light;
 
-         @media (max-width:900px) {
+         @media (max-width:700px) {
+         font-family: 'Gibson';
+
             text-stroke: 2px $c5;
             -webkit-text-stroke: 2px $c5;
-            font-size: 7.5vw;
+            font-size: 9.5vw;
          }
 
       }
@@ -43,49 +51,61 @@
          text-align: center;
          font-size: 5.5vw;
          font-family: 'Gibson-bold';
-         color: $c5;
+         color: white;
          text-shadow: $shadow-dark;
+         -webkit-text-stroke: 2px $c5;
+         text-stroke: 2px $c5;
 
-         @media (max-width:900px) {
+         svg {
+            margin: auto;
+         }
+
+         @media (max-width:700px) {
             font-size: 10vw;
-            -webkit-text-stroke: 0.5px white;
-            text-stroke: 0.5px white;
          }
       }
 
       h2 {
-         color: $c2;
-         font-size: 7vw;
+         color: $c7;
+         font-size: 5vw;
          font-family: 'Patua';
-         font-weight: 600;
+         font-weight: 700;
          text-align: center;
-         // -webkit-text-stroke: 2px $c2;
-         // text-stroke: 1px $c2;
-         // text-shadow: $shadow-light;
 
-         @media (max-width:900px) {
-            font-size: 12vw;
-            // -webkit-text-stroke: 0.1px $c2;
-            // text-stroke: 0.1px $c2;
+         @media (max-width:700px) {
+            font-size: 10vw;
          }
       }
 
       .rotating-text-container {
-         width: 80%;
-         margin: 1em auto;
 
-         @media (max-width:900px) {
-            width: 80%;
-            margin: 0 auto;
+         p {
+            color: $c5;
+            font-family: 'Gibson-bold';
+            font-size: 4vw;
+            text-shadow: $shadow-light;
+            // @media (max-width:700px) {
+            //    font-size: 2vw;
+            // }
          }
+
+         span {
+            color: $c7;
+            font-weight: 600;
+            text-align: center;
+         }
+
+      }
+
+      a.btn {
+         margin: 1em;
       }
    }
 
-
-
-
-
-   a.btn {
-      margin: 2em;
+   .info {
+      >* {
+         width: 50%;
+      }
    }
+
 }

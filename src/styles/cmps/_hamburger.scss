@@ -1,5 +1,10 @@
 .hamburger {
+   justify-content: flex-end;
    position: relative;
+
+   svg {
+      height: 48px;
+   }
 
    .top_bar,
    .bottom_bar {

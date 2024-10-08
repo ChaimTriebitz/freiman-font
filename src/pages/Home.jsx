@@ -1,4 +1,5 @@
 import { imgs } from '../assets/imgs';
+import { svgs } from '../assets/svgs';
 import { RotatingText } from '../cmps'
 import { Link } from 'react-router-dom';
 
@@ -9,9 +10,13 @@ export const Home = () => {
       <div className='page home'>
          <div className="banner home">
             <h1>Experienced Real Estate Lawyer in</h1>
-            <span className='isreal'>Israel</span>
+            <span className='isreal'>
+               {svgs.israel}
+               Israel
+            </span>
+
             <h2>Netanel Fraiman</h2>
-            <div className='rotating-text-container' style={{ display: "block" }}>
+            <div className='rotating-text-container'>
                <RotatingText
                   staticText={'Providing expert legal advice in :'}
                   rotatingTexts={["Property Deals", "Tax Planning", "Financial Plans"]}

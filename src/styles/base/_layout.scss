@@ -7,8 +7,12 @@
 }
 
 .page {
+   margin-top: 80px;
    flex-direction: column;
+   @media (max-width: 900px) {
+      margin-top: 64px;
 
+   }
 }
 
 .banner{
