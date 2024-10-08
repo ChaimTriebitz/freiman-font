@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export const RotatingText = ({ staticText = '', rotatingTexts = [], frequency = 6 }) => {
+export const RotatingText = ({ staticText = '', rotatingTexts = [], frequency = 3 }) => {
    const [currIdx, setCurrIdx] = useState(0);
 
    useEffect(() => {

@@ -9,6 +9,7 @@
       background-image:
          linear-gradient(#ffffff25 85%, #ffffff50, #ffffff 90%),
          url('../../assets/imgs/jerusalem/j1.webp'), ;
+         background-attachment: fixed;
 
       @media (min-width:700px) {
          gap: 0;
