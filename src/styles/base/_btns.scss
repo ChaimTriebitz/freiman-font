@@ -2,15 +2,13 @@
    flex: 0;
    font-size: 1.25em;
    align-self: center;
-   padding: 0.35em 1em;
+   padding: 0.25em 0.75em;
    text-align: center;
    transition: 0.5s;
-   background-size: 200% auto;
    color: white;
-   // border: 2px solid white;
    border-radius: 10px;
    display: block;
-   // box-shadow: $shadow-light;
+   box-shadow: $shadow-light;
    background:$c5;
    cursor: pointer;
    user-select: none;
