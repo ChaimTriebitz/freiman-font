@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import { NavBar,  Footer } from './cmps';
 import { Home, About, Services, Resources, Contact } from './pages';
+import { useScrollToTop } from './hooks';
 
 function App() {
-
+useScrollToTop()
    document.title = 'Fraiman - law form'
 
    return (

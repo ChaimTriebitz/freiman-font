@@ -3,7 +3,7 @@
 
    .banner {
       background-image:
-         linear-gradient(#ffffff25 85%, #ffffff50, #ffffff 90%),
+         linear-gradient(#ffffff25 100%, #ffffff50, #ffffff 100%),
          url('../../assets/imgs/fraiman-office.jpg');
    }
 
@@ -11,56 +11,64 @@
       flex-direction: column;
       font-weight: 700;
       padding: 1em;
-      font-size: 1.1em;
-      margin-bottom: 2em;
+      font-size: 1.25em;
 
       p {
          display: inline;
+         height: 0;
+         animation: showing ease-out 1s forwards;
       }
 
       span {
          color: transparent;
-         background-image: linear-gradient($c7, $c5);
+         background-image: linear-gradient($c5, $c7);
          background-repeat: no-repeat;
          background-size: 0% 100%;
          -webkit-background-clip: text;
          background-clip: text;
          animation: typing linear 2.5s forwards;
-
-
-
       }
 
+      p:nth-child(2),
       p:nth-child(2) span {
          animation-delay: 2.5s;
       }
-
+      p:nth-child(3),
       p:nth-child(3) span {
          animation-delay: 5s;
       }
-
+      p:nth-child(4),
       p:nth-child(4) span {
          animation-delay: 7.5s;
       }
-
+      p:nth-child(5),
       p:nth-child(5) span {
          animation-delay: 10s;
       }
-
+      p:nth-child(6),
       p:nth-child(6) span {
          animation-delay: 12.5s;
+      }
+      p:nth-child(7),
+      p:nth-child(7) span {
+         animation-delay: 15s;
       }
    }
 }
 
-.about p {}
-
 /* Create typing effect */
 @keyframes typing {
-
-
    to {
       background-size: 100% 100%;
    }
 }
 
+@keyframes showing {
+   from {
+      height: 0;
+   }
+
+   to {
+      height: auto;
+   }
+}

@@ -1,15 +1,15 @@
 .home {
    .banner {
-      padding-bottom: 5em;
+      padding-bottom: 2em;
       padding-top: 1em;
       padding-inline: 1em;
 
       justify-content: space-around;
       gap: 1em;
       background-image:
-         linear-gradient(#ffffff25 85%, #ffffff50, #ffffff 90%),
+         linear-gradient(#ffffff50 50%, #ffffff85 75%, #ffffff90 100%),
          url('../../assets/imgs/jerusalem/j1.webp'), ;
-         background-attachment: fixed;
+      background-attachment: fixed;
 
       @media (min-width:700px) {
          gap: 0;
@@ -20,20 +20,8 @@
          flex: 0;
       }
 
-      // .card2 {
-      //    position: absolute;
-      //    top: 50%;
-      //    left: 7.5%;
-      //    transform: translateY(-50%);
-
-      //    @media (max-width:700px) {
-      //       left: 50%;
-      //       transform: translate(-50%, -90%);
-      //    }
-      // }
-
       h1 {
-         color: $c5;
+         color: $c7;
          font-size: 5vw;
          font-family: 'Gibson-bold';
          text-align: center;
@@ -82,7 +70,7 @@
       .rotating-text-container {
 
          p {
-            color: $c5;
+            color: $c7;
             font-family: 'Gibson-bold';
             font-size: 4vw;
             text-shadow: $shadow-light;
@@ -90,7 +78,7 @@
          }
 
          span {
-            color: $c7;
+            color: $c5;
             font-weight: 600;
             text-align: center;
          }
@@ -103,20 +91,30 @@
    }
 
    .info {
-      margin-bottom: 2em;
+      gap: 0;
+
       >* {
          width: 50%;
       }
 
-      p {
-         padding: 0.5em;
-         font-size: 2vw;
-         font-weight: 600;
+      div {
+         flex-direction: column;
 
-         @media (max-width:700px) {
-            font-size: 3.25vw;
+         p {
+            color: $c2;
+            padding: 0.5em;
+            font-size: 1.75em;
+            font-weight: 600;
+
+            @media (max-width:700px) {
+               font-size: 3.25vw;
+            }
          }
+
+
       }
+
+
    }
 
 }

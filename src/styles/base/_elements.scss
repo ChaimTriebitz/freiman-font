@@ -37,7 +37,6 @@ form,
 button {
    display: flex;
    gap: 0.5em;
-   flex: 1;
 }
 
 ul[role="list"],
@@ -99,15 +98,14 @@ dialog::backdrop {
 }
 
 ::-webkit-scrollbar {
-   width: 0.5rem;
-   height: 0.5rem;
+   width: 0.75rem;
+   height: 0.75rem;
 }
 
 ::-webkit-scrollbar-track {
-   background: $c4;
+   background: $c5;
 }
 
 ::-webkit-scrollbar-thumb {
-   background: $c2;
-   border-radius: 5px;
+   background: white;
 }

@@ -11,7 +11,7 @@ export const Home = () => {
          <div className="banner home">
             <h1>Experienced Real Estate Lawyer in</h1>
             <span className='isreal'>
-               {svgs.israel}
+               {/* {svgs.israel} */}
                Israel
             </span>
 
@@ -22,13 +22,17 @@ export const Home = () => {
                   rotatingTexts={["Property Deals", "Tax Planning", "Financial Plans"]}
                />
             </div>
-            <Link className='btn' to='/contact'>Contact us</Link>
+            <Link className='btn' to='/services'>Services</Link>
          </div>
          <div className="info">
-            <img src={imgs.jerusalem.j1} alt="" />
-            <p>
-               Netanel Fraimann is a real-estate lawyer, advising clients on purchase, sale, and rental transactions, as well as tax-related real estate issues.
-            </p>
+            <img src={imgs.jerusalem.j6} alt="" />
+            <div>
+               <p>
+                  Netanel Fraimann is a real-estate lawyer, advising clients on purchase, sale, and rental transactions, as well as tax-related real estate issues.
+               </p>
+               {/* {svgs.israel} */}
+            </div>
+
          </div>
       </div>
    )

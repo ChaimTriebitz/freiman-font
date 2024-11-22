@@ -1,7 +1,16 @@
 .resources {
+   background: $c6;
    .banner {
+      background-size: contain;
       background-image: 
-      linear-gradient(#ffffff29 75%, #3a3a3a80, #3a3a3a 95%),
-      url('../../assets/imgs/ashkelon.jpg');
+      linear-gradient(#ffffff20 , #ffffff20 ),
+      url('../../assets/imgs/fraiman-logo.png');
+      padding: 1em;
+      p{
+         font-family: "Patua";
+         font-size: 1.5em;
+
+         color: $c2;
+      }
    }
 }

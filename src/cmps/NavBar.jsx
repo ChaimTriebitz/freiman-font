@@ -1,8 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { svgs } from '../assets/svgs';
 
-import React, { useRef, useState } from 'react';
-import { useBlur, useGlobalState } from '../hooks';
+import { useState } from 'react';
 import { imgs } from '../assets/imgs';
 
 const pages = [
@@ -10,17 +9,14 @@ const pages = [
    { name: 'about', link: 'about' },
    { name: 'services', link: 'services' },
    { name: 'resources', link: 'resources' },
-   { name: 'contact', link: 'contact' },
+   // { name: 'contact', link: 'contact' },
 ];
 
 
 
 export const NavBar = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false)
-   const [isUserProfileOpen, setIsUserProfileOpen] = useState(false)
    const { search, pathname } = useLocation()
-   const { loggedInUser } = useGlobalState()
-   const userProfileRef = useBlur(() => setIsUserProfileOpen(false))
 
    return (
       <nav className='nav-bar'>

@@ -1,90 +1,90 @@
-.card {
-   color: white;
-   text-shadow: 0 0 10px rgb(174, 255, 0), 0 0 20px rgb(0, 255, 89);
-   box-shadow: inset 0 0 20px black;
-   font-weight: 700;
-   font-size: 2em;
-   text-transform: uppercase;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 300px;
-   height: 500px;
-   margin: auto;
-   margin-top: 200px;
-   border-radius: 20px;
-   position: relative;
-   overflow: hidden;
-}
+// .card {
+//    color: white;
+//    text-shadow: 0 0 10px rgb(174, 255, 0), 0 0 20px rgb(0, 255, 89);
+//    box-shadow: inset 0 0 20px black;
+//    font-weight: 700;
+//    font-size: 2em;
+//    text-transform: uppercase;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    width: 300px;
+//    height: 500px;
+//    margin: auto;
+//    margin-top: 200px;
+//    border-radius: 20px;
+//    position: relative;
+//    overflow: hidden;
+// }
 
-.card::after {
-   content: '';
-   height: calc(100% - 50px);
-   width: calc(100% - 50px);
-   background: #65818E;
-   box-shadow: inset 0 0 20px #000000;
-   border-radius: 5px;
-   position: absolute;
-   inset: 50%;
-   transform: translate(-50%, -50%);
-   z-index: -1;
-}
+// .card::after {
+//    content: '';
+//    height: calc(100% - 50px);
+//    width: calc(100% - 50px);
+//    background: #65818E;
+//    box-shadow: inset 0 0 20px #000000;
+//    border-radius: 5px;
+//    position: absolute;
+//    inset: 50%;
+//    transform: translate(-50%, -50%);
+//    z-index: -1;
+// }
 
-.card::before {
-   content: '';
-   height: 200%;
-   width: 400%;
-   background: linear-gradient(50deg, #7DA5B6 45%, #11FF00 45%, #A200FF, #11FF00 55%, #7DA5B6 55%);
-   position: absolute;
-   inset: 50%;
-   transform: translate(-50%, -50%);
-   z-index: -1;
-}
+// .card::before {
+//    content: '';
+//    height: 200%;
+//    width: 400%;
+//    background: linear-gradient(50deg, #7DA5B6 45%, #11FF00 45%, #A200FF, #11FF00 55%, #7DA5B6 55%);
+//    position: absolute;
+//    inset: 50%;
+//    transform: translate(-50%, -50%);
+//    z-index: -1;
+// }
 
-.card:hover::before {
-   animation: borderRotate 1s linear infinite;
-}
+// .card:hover::before {
+//    animation: borderRotate 1s linear infinite;
+// }
 
-.card2 {
-   padding: 5px;
-   width: 15%;
-   height: 30%;
-   border-radius: 20px;
-   position: relative;
-   overflow: hidden;
-   border-radius: 100% 200px 80% 300px;
-   box-shadow: $shadow-light;
-   z-index: 9;
-   @media (max-width:900px) {
-      width: 150px;
-      height: 150px;
-   }
-}
+// .card2 {
+//    padding: 5px;
+//    width: 15%;
+//    height: 30%;
+//    border-radius: 20px;
+//    position: relative;
+//    overflow: hidden;
+//    border-radius: 100% 200px 80% 300px;
+//    box-shadow: $shadow-light;
+//    z-index: 9;
+//    @media (max-width:900px) {
+//       width: 150px;
+//       height: 150px;
+//    }
+// }
 
-.card2>img {
-   border-radius: 100% 200px 80% 300px;
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-   z-index: 9;
+// .card2>img {
+//    border-radius: 100% 200px 80% 300px;
+//    height: 100%;
+//    width: 100%;
+//    object-fit: cover;
+//    z-index: 9;
 
-}
+// }
 
-.card2::before {
-   content: '';
-   height: 200%;
-   width: 200%;
-   background: linear-gradient($c1, $c2, $c3, $c4, $c5, $c6, white);
-   position: absolute;
-   inset: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 1;
-   animation: borderRotate 10s linear infinite;
-}
+// .card2::before {
+//    content: '';
+//    height: 200%;
+//    width: 200%;
+//    background: linear-gradient($c1, $c2, $c3, $c4, $c5, $c6, white);
+//    position: absolute;
+//    inset: 50%;
+//    transform: translate(-50%, -50%);
+//    z-index: 1;
+//    animation: borderRotate 10s linear infinite;
+// }
 
 
-@keyframes borderRotate {
-   to {
-      transform: translate(-50%, -50%) rotate(360deg);
-   }
-}
+// @keyframes borderRotate {
+//    to {
+//       transform: translate(-50%, -50%) rotate(360deg);
+//    }
+// }

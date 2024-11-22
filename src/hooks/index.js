@@ -8,10 +8,12 @@ import { useDraggableRows } from './useDraggableRows.js'
 import { useStateToSearchParams } from './useStateToSearchParams.js'
 import { useForm } from './useForm.js'
 import { useDialog } from './useDialog.js'
+import { useScrollToTop } from './useScrollToTop.js'
 
 
 
 export {
+   useScrollToTop,
    useDialog,
    useTimeout,
    useBlur,
